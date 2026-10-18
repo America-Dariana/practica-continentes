@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Instrument Serif';
+    src: url('fonts/Instrument_Serif/InstrumentSerif-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Instrument Serif Italic';
+    src: url('fonts/Instrument_Serif/InstrumentSerif-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F8F6F1;
+    color: #18231D;
+    font-family: 'DM Sans', sans-serif;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+.hero {
+    text-align: center;
+    padding: 3rem 1rem 4rem 1rem;
+    background: radial-gradient(circle at 82% 12%, #eb654214, transparent 22rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-subtitulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.linea-naranja {
+    width: 25px;
+    height: 2px;
+    background-color: #EB6542;
+}
+
+.subtitulo-superior {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.titulo-principal {
+    font-family: 'Instrument Serif', serif;
+    font-size: 5rem;
+    line-height: 1;
+    margin-top: 0.5rem;
+    font-weight: normal;
+}
+
+.texto-destacado {
+    font-family: 'Instrument Serif Italic', serif;
+    color: #EB6542;
+    font-style: italic;
+}
+
+.seccion-destinos {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.encabezado-destinos {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-top: 1px solid rgba(24, 35, 29, 0.2);
+    padding-top: 1rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.6;
+}
+
+.grid-continentes {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.tarjeta-continente {
+    flex: 1;
+    min-width: 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen-container {
+    width: 100%;
+    height: 310px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.imagen-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.imagen-container img:hover {
+    transform: scale(1.05);
+}
+
+.info-continente {
+    margin-top: 0.75rem;
+}
+
+.detalles-superiores {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.65rem;
+    font-weight: 600;
+    opacity: 0.6;
+    margin-bottom: 0.25rem;
+}
+
+.nombre-continente {
+    font-family: 'Instrument Serif', serif;
+    font-size: 2.2rem;
+    font-weight: normal;
+}
+
+.pie-pagina {
+    text-align: left;
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    font-size: 0.65rem;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    border-top: 1px solid rgba(24, 35, 29, 0.15);
+}
